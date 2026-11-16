@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="250" viewBox="0 0 880 250" role="img" aria-label="Your code sends POST /v1/technical-seo to the Semust API and receives 27 checks + score as JSON. Long requests return 202 and are collected from GET /v1/tasks.">
+  <rect width="880" height="250" rx="16" fill="#f4f3ec"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#7a746a"/>
+    </marker>
+  </defs>
+  <!-- boxes -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif">
+    <rect x="24" y="40" width="200" height="92" rx="12" fill="#fffdf8" stroke="#e3dfd2"/>
+    <text x="124" y="80" text-anchor="middle" font-size="17" font-weight="600" fill="#17100e">Your code</text>
+    <text x="124" y="104" text-anchor="middle" font-size="13" fill="#3d3d3d">Python · Node · Go · PHP</text>
+
+    <rect x="340" y="40" width="200" height="92" rx="12" fill="#fffdf8" stroke="#b2562e" stroke-width="1.5"/>
+    <text x="440" y="80" text-anchor="middle" font-size="17" font-weight="600" fill="#17100e">Semust API</text>
+    <text x="440" y="104" text-anchor="middle" font-size="13" fill="#3d3d3d">data.semust.com</text>
+
+    <rect x="656" y="40" width="200" height="92" rx="12" fill="#fffdf8" stroke="#e3dfd2"/>
+    <text x="756" y="80" text-anchor="middle" font-size="17" font-weight="600" fill="#17100e">200 OK</text>
+    <text x="756" y="104" text-anchor="middle" font-size="13" fill="#3d3d3d">27 checks + score as JSON</text>
+  </g>
+  <!-- arrows -->
+  <line x1="228" y1="86" x2="334" y2="86" stroke="#7a746a" stroke-width="1.5" marker-end="url(#a)"/>
+  <line x1="544" y1="86" x2="650" y2="86" stroke="#7a746a" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="281" y="72" text-anchor="middle" font-size="12" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#b2562e">POST</text>
+  <text x="281" y="108" text-anchor="middle" font-size="12" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#3d3d3d">/v1/technical-seo</text>
+  <text x="597" y="72" text-anchor="middle" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" fill="#3d3d3d">within wait</text>
+  <!-- slow path -->
+  <path d="M440 136 L440 176 L756 176 L756 138" fill="none" stroke="#7a746a" stroke-width="1.5" stroke-dasharray="5 5" marker-end="url(#a)"/>
+  <rect x="456" y="160" width="284" height="32" rx="16" fill="#f4f3ec" stroke="#e3dfd2"/>
+  <text x="598" y="181" text-anchor="middle" font-size="12.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#3d3d3d">202 task_id → GET /v1/tasks/{id}</text>
+  <text x="440" y="226" text-anchor="middle" font-size="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" fill="#7a746a">Still running after wait seconds? You get 202 and collect the same result from the task. Failed requests are not charged.</text>
+</svg>

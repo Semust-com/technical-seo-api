@@ -1,0 +1,291 @@
+{
+  "success": true,
+  "url": "https://www.wikipedia.org/",
+  "audit_results": {
+    "meta": {
+      "meta_description": {
+        "status": "pass",
+        "severity": "warning",
+        "data": {
+          "meta_description": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.",
+          "length": 130
+        }
+      },
+      "title": {
+        "status": "fail",
+        "severity": "critical",
+        "issue": "short_title",
+        "data": {
+          "title": "Wikipedia",
+          "length": 9
+        }
+      },
+      "canonical_url": {
+        "status": "fail",
+        "severity": "warning",
+        "issue": "missing_canonical",
+        "data": {
+          "current_url": "https://www.wikipedia.org/",
+          "canonical_url": ""
+        }
+      },
+      "robots_noindex": {
+        "status": "pass",
+        "severity": "critical",
+        "data": {}
+      },
+      "viewport": {
+        "status": "fail",
+        "severity": "critical",
+        "issue": "missing_device_width",
+        "data": {
+          "content": "initial-scale=1,user-scalable=yes"
+        }
+      },
+      "missing_lang": {
+        "status": "pass",
+        "severity": "warning",
+        "data": {
+          "lang": "en"
+        }
+      },
+      "noindex_canonical_conflict": {
+        "status": "pass",
+        "severity": "critical",
+        "data": {
+          "has_noindex": false,
+          "has_canonical": false
+        }
+      },
+      "hreflang": {
+        "status": "pass",
+        "severity": "warning",
+        "data": {
+          "hreflang_count": 0
+        }
+      }
+    },
+    "headings": {
+      "multiple_h1_tags": {
+        "status": "pass",
+        "severity": "warning",
+        "data": {
+          "h1_count": 1,
+          "h1_texts": [
+            "WikipediaThe Free Encyclopedia"
+          ]
+        }
+      },
+      "duplicate_h1_tags": {
+        "status": "pass",
+        "severity": "warning",
+        "data": {
+          "total_h1_count": 1
+        }
+      },
+      "broken_heading_structure": {
+        "status": "pass",
+        "severity": "warning",
+        "data": {
+          "headings": [
+            {
+              "level": 1,
+              "text": "WikipediaThe Free Encyclopedia",
+              "highlight": false
+            },
+            {
+              "level": 2,
+              "text": "1,000,000+articles",
+              "highlight": false
+            },
+            {
+              "level": 2,
+              "text": "100,000+articles",
+              "highlight": false
+            },
+            {
+              "level": 2,
+              "text": "10,000+articles",
+              "highlight": false
+            },
+            {
+              "level": 2,
+              "text": "1,000+articles",
+              "highlight": false
+            },
+            {
+              "level": 2,
+              "text": "100+articles",
+              "highlight": false
+            },
+            {
+              "level": 3,
+              "text": "The internet we were promised",
+              "highlight": false
+            },
+            {
+              "level": 3,
+              "text": "The internet we were promised",
+              "highlight": false
+            }
+          ],
+          "total_count": 8,
+          "skipped_levels": 0,
+          "empty_headings": 0
+        }
+      },
+      "missing_h1": {
+        "status": "pass",
+        "severity": "critical",
+        "data": {
+          "h1_count": 1,
+          "h1_text": "WikipediaThe Free Encyclopedia"
+        }
+      }
+    },
+    "links": {
+      "empty_anchor_text": {
+        "status": "pass",
+        "severity": "warning",
+        "data": {
+          "total_links": 384
+        }
+      },
+      "non_descriptive_anchors": {
+        "status": "pass",
+        "severity": "notice",
+        "data": {}
+      },
+      "internal_links_nofollow": {
+        "status": "pass",
+        "severity": "warning",
+        "data": {}
+      },
+      "too_many_internal_links": {
+        "status": "pass",
+        "severity": "warning",
+        "data": {
+          "internal_link_count": 374,
+          "threshold": 3000
+        }
+      },
+      "too_many_external_links": {
+        "status": "pass",
+        "severity": "warning",
+        "data": {
+          "external_link_count": 10,
+          "threshold": 100
+        }
+      }
+    },
+    "images": {
+      "images_without_alt": {
+        "status": "pass",
+        "severity": "warning",
+        "data": {
+          "total_images": 7
+        }
+      },
+      "missing_image_dimensions": {
+        "status": "pass",
+        "severity": "warning",
+        "data": {
+          "total_images": 7
+        }
+      }
+    },
+    "content": {
+      "low_word_count": {
+        "status": "pass",
+        "severity": "warning",
+        "data": {
+          "word_count": 1195,
+          "threshold": 200
+        }
+      },
+      "low_html_text_ratio": {
+        "status": "pass",
+        "severity": "warning",
+        "data": {
+          "text_to_html_ratio": 14.65,
+          "text_length": 8892,
+          "html_length": 60687
+        }
+      },
+      "lorem_ipsum": {
+        "status": "pass",
+        "severity": "notice",
+        "data": {}
+      },
+      "page_size": {
+        "status": "pass",
+        "severity": "warning",
+        "data": {
+          "html_size_bytes": 122506,
+          "html_size_threshold": 3145728,
+          "dom_element_count": 1196,
+          "dom_threshold": 1500
+        }
+      }
+    },
+    "url_analysis": {
+      "http_url": {
+        "status": "pass",
+        "severity": "critical",
+        "data": {
+          "scheme": "https"
+        }
+      },
+      "long_url": {
+        "status": "pass",
+        "severity": "notice",
+        "data": {
+          "url_length": 26,
+          "threshold": 2000
+        }
+      }
+    },
+    "social": {
+      "open_graph": {
+        "status": "fail",
+        "severity": "warning",
+        "issue": "open_graph_issues",
+        "data": {
+          "present_tags": {
+            "og:title": "Wikipedia, the free encyclopedia",
+            "og:description": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.",
+            "og:image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/250px-Wikipedia-logo-v2.svg.png",
+            "og:type": "website"
+          },
+          "missing_tags": [
+            "og:url"
+          ]
+        }
+      },
+      "twitter_card": {
+        "status": "fail",
+        "severity": "notice",
+        "issue": "missing_twitter_card_tags",
+        "data": {
+          "present_tags": {},
+          "missing_tags": [
+            "twitter:card",
+            "twitter:title",
+            "twitter:description",
+            "twitter:image"
+          ]
+        }
+      }
+    }
+  },
+  "summary": {
+    "total_checks": 27,
+    "passed_checks": 22,
+    "total_issues": 5,
+    "critical_issues": 2,
+    "warning_issues": 2,
+    "notice_issues": 1,
+    "score": 81
+  },
+  "cost": 0.0012
+}
